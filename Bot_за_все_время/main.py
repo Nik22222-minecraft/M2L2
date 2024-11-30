@@ -3,7 +3,7 @@ import random
 import os
 from bot_logic import gen_pass
 # Инициализация бота с использованием его токена
-bot = telebot.TeleBot("7771648002:AAFH_BCxiVbujzwfVrVw4M9DIy_FCFIeUCw")
+bot = telebot.TeleBot("токен")
     
 # Обработчик команды '/start' и '/hello'
 @bot.message_handler(commands=['start', 'hello'])

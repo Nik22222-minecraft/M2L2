@@ -24,8 +24,9 @@ def send_welcome(message):
 /ecology_2 - больше информации для взрослого (Начало борьбы с загрезнением)
 /ecology_3 - больше информации для того, кто уже начал бороться с загрезнением
 /ecology_mem - мем про окружающую среду
+если остались вопросы то пишите мне
 ''')
-    
+    bot.send_contact(message.chat.id, '78234782347','name')
 @bot.message_handler(commands=['ecology_1'])
 def send_welcome(message):
     bot.reply_to(message, f'''1.Сортировка мусора:
@@ -113,8 +114,10 @@ def send_welcome(message):
 действительно ли он мне нужен?
 Можно ли найти альтернативу,
 которая менее вредна для окружающей среды?
-''')
 
+Вот координаты одного из самых чистых мест
+''')
+    bot.send_location(message.chat.id, 51.1287, 71.4307)
 #Картинки
 @bot.message_handler(commands=['mem'])
 def send_mem(message):

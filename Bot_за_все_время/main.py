@@ -27,6 +27,7 @@ def send_welcome(message):
 если остались вопросы то пишите мне
 ''')
     bot.send_contact(message.chat.id, '78234782347','name')
+
 @bot.message_handler(commands=['ecology_1'])
 def send_welcome(message):
     bot.reply_to(message, f'''1.Сортировка мусора:
@@ -118,6 +119,7 @@ def send_welcome(message):
 Вот координаты одного из самых чистых мест
 ''')
     bot.send_location(message.chat.id, 51.1287, 71.4307)
+    
 #Картинки
 @bot.message_handler(commands=['mem'])
 def send_mem(message):
